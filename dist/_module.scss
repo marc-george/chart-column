@@ -1,0 +1,36 @@
+chart-column {
+  .tooltip-holder {
+    // Nifty trick: https://css-tricks.com/snippets/css/css-triangle/
+    .arrow-down {
+      margin: 0 auto; // center horizontally
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-top: 6px solid $gray8;
+    }
+    .tooltip {
+      box-shadow: 2px 2px 2px $gray3;
+      background-color: $gray8;
+      font-size: 0.9em;
+      padding: 5px 7px 7px;
+      border-radius: 3px;
+      .title {
+        font-weight: bold;
+        color: $white;
+        margin-bottom: 0;
+      }
+      .data {
+        background-color: $white;
+        margin: 0;
+        width: 100%;
+        .name {
+          padding: 0 3px;
+        }
+        .value {
+          padding: 0 3px;
+        }
+      }
+    }
+  }
+}
